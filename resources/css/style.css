@@ -1,9 +1,13 @@
+/*General formatting*/
+
+div {
+    border: 1px solid red;
+}
 
 /*Header Section*/
 
 header {
   display: flex;
-  border: 1px solid red;
   width: 100%;
   font-family: Verdana;
   font-size: 14px;
@@ -20,7 +24,6 @@ header {
     display: inline-flex;
     padding-left: 20px;
     width: 70%;
-    border: 1px solid blue;
     align-items: center;
 }
 
@@ -32,7 +35,6 @@ nav {
 
 nav span {
     display: inline-block;
-    border: 1px dotted green;
     align-self: center;
     text-align: center;
     }
@@ -54,21 +56,18 @@ nav span a {
     width: 630px;
     display: inline-flex;
     flex-direction: column;
-    border: 1px solid blue;
 }
 
 .column_medium {
     display: inline-flex;
     width: 300px;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 .column_small {
     display: inline-flex;
     width: 240px;
     flex-direction: column;
-    border: 1px solid orange;
     margin-right: 30px;
 }
 
