@@ -1,3 +1,6 @@
+
+/*Header Section*/
+
 header {
   display: flex;
   border: 1px solid red;
@@ -7,7 +10,7 @@ header {
   font-weight: bold;
  }
 
-div > span {
+#title {
     padding-left: 10px;
     text-align: center;
     color: MediumAquamarine;
@@ -15,7 +18,7 @@ div > span {
 
 #logo {
     display: inline-flex;
-    padding-left: 10px;
+    padding-left: 20px;
     width: 70%;
     border: 1px solid blue;
     align-items: center;
@@ -32,7 +35,13 @@ nav span {
     border: 1px dotted green;
     align-self: center;
     text-align: center;
+    }
+    
+nav span a {
+    color: black;
 }
+
+/*Content Section*/
 
 .content {
     display: flex;
@@ -64,10 +73,15 @@ nav span {
 }
 
 .headline {
+    height: 300px;
     font-family: Georgia;
     font-weight: bold;
     font-size: 40px;
     color: white;
     display: flex;
     background-image: url("../../resources/images/img-story-main.png");
+}
+
+.headline > span {
+    align-self: center;
 }
