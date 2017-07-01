@@ -14,10 +14,11 @@ header {
   border-bottom: 1px solid black;
   justify-content: space-between;
   position: fixed;
+  top: 0px;
   width: 100%;
   background: white;
-  padding-bottom: 8px
-  position: 0;
+  padding-bottom: 8px;
+  z-index: 1;
  }
 
 #title {
