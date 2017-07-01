@@ -17,6 +17,7 @@ header {
   width: 100%;
   background: white;
   padding-bottom: 8px
+  position: 0;
  }
 
 #title {
