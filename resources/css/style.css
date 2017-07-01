@@ -1,17 +1,22 @@
 /*General formatting*/
 
-div {
-    border: 1px solid red;
-}
-
 /*Header Section*/
+
+body {
+    margin-top: 0px
+}
 
 header {
   display: flex;
-  width: 100%;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background: white;
+  padding-bottom: 8px
  }
 
 #title {
@@ -23,55 +28,83 @@ header {
 #logo {
     display: inline-flex;
     padding-left: 20px;
-    width: 70%;
     align-items: center;
 }
 
-nav {
+.navtop {
     display: inline-flex;
-    width: 30%;
     justify-content: space-around;
 }
 
-nav span {
+.menuitem {
     display: inline-block;
     align-self: center;
     text-align: center;
+    padding: 10px;
+    color: black;
     }
     
-nav span a {
+.navtop span a {
     color: black;
 }
 
-/*Content Section*/
+/*General Style for Content Section*/
 
 .content {
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    padding-top: 100px;
 }
 
 .column_large {
     width: 630px;
     display: inline-flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 
 .column_medium {
     display: inline-flex;
     width: 300px;
     flex-direction: column;
+    margin-right: 20px;
 }
 
 .column_small {
     display: inline-flex;
     width: 240px;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .headline {
+    font-family: Georgia;
+    font-size: 20px;
+    color: black;
+}
+
+.caption {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  align-self: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.story {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+/*Style for left column */
+
+.headline_caption {
     height: 300px;
     font-family: Georgia;
     font-weight: bold;
@@ -81,6 +114,124 @@ nav span a {
     background-image: url("../../resources/images/img-story-main.png");
 }
 
-.headline > span {
+.headline_caption > span {
     align-self: center;
+    text-align: center;
+}
+
+.stories_left {
+    width: 630px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.orca {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.earth {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-right: 15px;
+    background-image: url("../../resources/images/img-story-2.png")
+}
+
+.burger {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin-right: 15px;
+    flex-direction: column;
+}
+
+.cameras {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-right: 15px;
+    background-image: url("../../resources/images/img-story-3.png")
+}
+
+
+/* Style for middle column */
+
+.cats {
+    height: 300px;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    background-image: url("../../resources/images/img-story-1.png")
+}
+
+/* Style for right column */
+
+.bite_head {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.bitelist {
+    background-color: WhiteSmoke;
+    font-family: Verdana;
+    font-size: 12px;
+    color: DimGray;
+}
+
+.bite {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+/* Style footer */
+
+.footer {
+    height: 400px;
+    display: flex;
+    background-color: MediumAquamarine;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbottom {
+    display: inline-flex;
+    padding: 20px;
+}
+
+.navbottom > span {
+    display: inline-flex;
+    padding: 15px;
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.navitem_bottom a {
+    color: black;
+    padding: 0px 20px;
+    margin: 0px;
+    font-family: Verdana;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.copyright {
+    background-color: LightGrey;
 }
