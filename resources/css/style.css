@@ -1,14 +1,12 @@
-/*General formatting*/
+/* --- General formatting --- */
 
-/*Header Section*/
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
+
+/* --- Header Section --- */
 
 header {
   display: flex;
@@ -18,11 +16,8 @@ header {
   border-bottom: 1px solid black;
   justify-content: space-between;
   position: fixed;
-  top: 0px;
   width: 100%;
-  max-width: 1260px;
   background: white;
-  padding-bottom: 8px;
   z-index: 1;
  }
 
@@ -59,7 +54,6 @@ header {
 
 .content {
     display: flex;
-    width: 100%;
     flex-direction: row;
     justify-content: center;
     margin-top: 30px;
@@ -68,26 +62,23 @@ header {
 }
 
 .column_large {
-    flex-basis: 630px;
-    display: inline-flex;
+    width: 630px;
     flex-direction: column;
     margin-right: 20px;
     flex-wrap: wrap;
-    flex-shrink: 1;
-}
+    }
 
 .column_medium {
-    display: inline-flex;
-    flex-basis: 300px;
+    display: flex;
+    width: 300px;
     flex-direction: column;
     margin-right: 20px;
-}
+    }
 
 .column_small {
-    display: inline-flex;
-    flex-basis: 240px;
+    display: flex;
+    width: 240px;
     flex-direction: column;
-    margin-right: 20px;
 }
 
 .headline {
@@ -111,6 +102,7 @@ header {
   font-size: 17px;
   color: black;
 }
+
 /*Style for left column */
 
 .headline_caption {
@@ -128,10 +120,10 @@ header {
     text-align: center;
 }
 
-.stories_left {
-    flex-basis: 630px;
-    height: 630px;
+#stories_left {
     display: flex;
+    width: 630px;
+    height: 630px;
     flex-direction: column;
     align-content: flex-start;
     justify-content: space-between;
@@ -140,35 +132,36 @@ header {
 }
 
 .orca {
+    display: flex;
     width: 300px;
     height: 300px;
-    display: flex;
     flex-direction: column;
-    margin-right: 15px;
+    flex-wrap: wrap;
 }
 
 .earth {
+    display: flex;
     height: 300px;
     width: 300px;
-    display: flex;
     margin-right: 15px;
-    background-image: url("../../resources/images/img-story-2.png")
+    background-image: url("../../resources/images/img-story-2.png");
 }
 
 .burger {
+    display: flex;
     width: 300px;
     height: 300px;
-    display: flex;
-    margin-right: 15px;
     flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: 1;
 }
 
 .cameras {
+    display: flex;
     height: 300px;
     width: 300px;
-    display: flex;
     margin-right: 15px;
-    background-image: url("../../resources/images/img-story-3.png")
+    background-image: url("../../resources/images/img-story-3.png");
 }
 
 
@@ -210,7 +203,7 @@ header {
 .footer {
     height: 400px;
     display: flex;
-    width: 100%;
+    flex-basis: 100%;
     max-width: 1280px;
     background-color: MediumAquamarine;
     margin: auto;
