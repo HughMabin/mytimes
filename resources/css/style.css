@@ -9,6 +9,8 @@ body {
 /* --- Header Section --- */
 
 header {
+  margin: 0px;
+  padding: 0px;
   display: flex;
   font-family: Verdana;
   font-size: 14px;
@@ -19,6 +21,7 @@ header {
   width: 100%;
   background: white;
   z-index: 1;
+  top: 0px;
  }
 
 #title {
